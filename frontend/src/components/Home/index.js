@@ -9,7 +9,7 @@ class Home extends Component {
     state={currencies:{}, timestamp:Date.now(), activeCountryId: 'INR', startDate:'2022-11-01', compareData: {} }
 
     componentDidMount() {
-        this.timerId = setInterval(this.getData, 10000)
+        this.timerId = setInterval(this.getData, 2000)
     }
 
     componentWillUnmount() {
